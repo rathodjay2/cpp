@@ -1,0 +1,22 @@
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double kilometer;
+    cout << "Enter distance in kilometers: ";
+    cin >> kilometer;
+
+    double cm = kilometer * 100000; 
+    double meter = kilometer * 1000; 
+    double inch = kilometer* 39370.1; 
+    double feet = kilometer * 3280.84; 
+
+    cout << setfill('.') << setw(20) << "Distance in centimeters: " << setprecision(2) << fixed << cm << endl;
+    cout << setfill('.') << setw(20) << "Distance in meters: " << setprecision(2) << fixed << meter << endl;
+    cout << setfill('.') << setw(20) << "Distance in inches: " << setprecision(2) << fixed << inch << endl;
+    cout << setfill('.') << setw(20) << "Distance in feet: " << setprecision(2) << fixed << feet << endl;
+
+    return 0;
+}
