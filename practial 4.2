@@ -1,0 +1,20 @@
+
+#include <iostream>
+using namespace std;
+
+inline float multiply(int num1, int num2) {
+    return num1 * num2;
+}
+
+int main() {
+    float num1, num2;
+    cout << "Enter first num: ";
+    cin >> num1;
+    cout << "Enter second num: ";
+    cin >> num2;
+
+    int result = multiply(num1, num2);
+    cout << "The result of multiplication is: " << result << endl;
+
+    return 0;
+}
